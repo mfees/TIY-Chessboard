@@ -130,6 +130,74 @@ background-color: #3775ae  ;
 }
 
 
+td:before {
+    font-size: 9vw;
+}
+
+/*td:hover::before {
+    background-color: lightgreen;
+    
+}*/
+
+
+/****Black Pieces****/
+
+/*rooks*/
+.piece.black.rook:before {
+    position: absolute;
+    content: "\265C";
+    
+}
+.piece.black.rook:hover {
+    background-color: #758db0  ;
+}
+
+/*knights*/
+.piece.black.knight:before {
+    position: absolute;
+    content: "\265E";
+        
+}
+.piece.black.knight:hover {
+    background-color: #758db0  ;
+}
+
+/*bishops*/
+.piece.black.bishop:before {
+    position: absolute;
+    content: "\265D";
+}
+.piece.black.bishop:hover {
+    background-color: #758db0  ;
+}
+
+/*queen*/
+.piece.black.queen:before {
+    position: absolute;
+    content: "\265B";
+}
+.piece.black.queen:hover {
+    background-color: #758db0  ;
+}
+
+/*king*/
+.piece.black.king:before {
+    position: absolute;
+    content: "\265A";
+}
+#e8:hover {
+    background-color: #758db0  ;
+}
+
+/*pawns*/
+.piece.black.pawn:before {
+    position: absolute;
+    content: "\265F";
+}
+.piece.black.pawn:hover {
+background-color: #758db0  ;
+}
+
 
 /*
 p {
