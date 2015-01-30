@@ -21,11 +21,6 @@ function print(board){
 
 print();
 
-
-document.write(11 + 3);
-           
-
-
 //  // Before any rows are printed, print the `<table>`...
 //  //console.log('<table class="chessboard">');
 //

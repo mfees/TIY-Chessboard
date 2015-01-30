@@ -96,10 +96,6 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-body {
-    background-color: darkgray; 
-}
-
 table {
     width: 90%;
     margin: 0 auto;
@@ -124,9 +120,13 @@ tbody td {
     padding-bottom: 10%;          
 }
 
+tr {
+    background-color: #bbb;
+}
+
 tbody :nth-child(even) td:nth-child(even), 
 tbody :nth-child(odd) td:nth-child(odd) {
-background-color: #3775ae  ;
+background-color: #fff;
 }
 
 
