@@ -17,39 +17,12 @@ function print(board){
     });
     
     document.write('</table>');
+    
 }
 
 print();
 
-//  // Before any rows are printed, print the `<table>`...
-//  //console.log('<table class="chessboard">');
-//
-//  _.forEach(board, function(row, key){
-//      
-//      console.log(row);
-//
-//      console.log('<tr class="row">');
-//      // Before any cells are printed...
-//
-//      _.forEach(row, function(square, k){
-//          
-//        console.log('<td class="square"></td>');
-//          
-//          // In here, we have `rank`, `file`, and `square`...
-//
-//      }); // END foreach(row)
-//      
-//      console.log('</tr>');
-//      // After all the cells are printed...
-//
-//  }); // END foreach(board)
-//
-//  // After all the rows are printed...
-//  console.log('</table> <!-- .chessboard -->');
-//} // END print
-//
-//
-//
+
 //var board = [
 //    ['R', 'N', 'B', 'Q', 'K', 'B', 'N', 'R'],
 //    ['P', 'P', 'P', 'P',  'P', 'P', 'P', 'P'],
@@ -59,11 +32,8 @@ print();
 //    [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ',],
 //    ['p', 'p', 'p', 'p', 'p', 'p', 'p', 'p',],
 //    ['r', 'n', 'b', 'q', 'k', 'b', 'n', 'r'] ];
-//
-//
-//
-//
-//
+
+
 //console.log(board.join('\n') + '\n\n');
 //
 //

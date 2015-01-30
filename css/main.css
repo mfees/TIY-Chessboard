@@ -134,6 +134,10 @@ td:before {
     font-size: 9vw;
 }
 
+.button {
+    font-family: sans-serif;
+}
+
 /*td:hover::before {
     background-color: lightgreen;
     
