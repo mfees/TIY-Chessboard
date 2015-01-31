@@ -30,14 +30,14 @@ var board = {};
         'eight': '<span class="piece black rook"></span>'
     };
     board.b = {
-        'one': '&#9823;',
-        'two': '&#9823;',
-        'three': '&#9823;',
-        'four': '&#9823;',
-        'five': '&#9823;',
-        'six': '&#9823;',
-        'seven': '&#9823;',
-        'eight': '&#9823;'
+        'one': '<span class="piece black pawn"></span>',
+        'two': '<span class="piece black pawn"></span>',
+        'three': '<span class="piece black pawn"></span>',
+        'four': '<span class="piece black pawn"></span>',
+        'five': '<span class="piece black pawn"></span>',
+        'six': '<span class="piece black pawn"></span>',
+        'seven': '<span class="piece black pawn"></span>',
+        'eight': '<span class="piece black pawn"></span>'
     };
     board.c = {
         'one': '',
