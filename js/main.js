@@ -95,6 +95,7 @@ var board = {};
         'eight': '<span class="piece white rook"></span>'
     };
 
+
 print(board);
 
 function move(board){
