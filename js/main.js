@@ -20,14 +20,14 @@ function print(board){
 
 var board = {};
     board.a = {
-        'one': '<span class="">&#9820;</span>',
-        'two': '<span class="">&#9822;</span>',
-        'three': '<span class="">&#9821;</span>',
-        'four': '<span class="">&#9819;</span>',
-        'five': '<span class="">&#9818;</span>',
-        'six': '<span class="">&#9821;</span>',
-        'seven': '<span class="">&#9822;</span>',
-        'eight': '<span class="">&#9820;</span>'
+        'one': '<span class="piece black rook"></span>',
+        'two': '<span class="piece black knight"></span>',
+        'three': '<span class="piece black bishop"></span>',
+        'four': '<span class="piece black queen"></span>',
+        'five': '<span class="piece black king"></span>',
+        'six': '<span class="piece black bishop"></span>',
+        'seven': '<span class="piece black knight"></span>',
+        'eight': '<span class="piece black rook"></span>'
     };
     board.b = {
         'one': '&#9823;',
