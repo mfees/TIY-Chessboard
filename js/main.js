@@ -10,8 +10,7 @@ function print(board){
         document.write("</tr>");
     });
     
-    document.write('</table>');
-    
+    document.write('</table>');    
 }
 
 var board = {};
@@ -96,8 +95,10 @@ var board = {};
         'eight': '<span class="piece white rook"></span>'
     };
 
-board.c.three = board.a.one;
-board.a.one = '';
+function move(board, fromX, fromY, toX, toY){
+  board.c.three = board.a.one;
+  board.a.one = '';
+}
 
 print(board);
 
