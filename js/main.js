@@ -105,6 +105,11 @@ var board = {};
 
 print(board);
 
+document.write('<i class="fa fa-angle-double-left fa-lg"></i>');
+document.write('<i class="fa fa-angle-left fa-lg"></i>');
+document.write('<i class="fa fa-angle-right fa-lg"></i>');
+document.write('<i class="fa fa-angle-double-right fa-lg"></i>');
+
 
 //var board = [
 //    ['R', 'N', 'B', 'Q', 'K', 'B', 'N', 'R'],
