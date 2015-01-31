@@ -117,6 +117,12 @@ tbody :nth-child(odd) td:nth-child(odd) {
 background-color: #8cdcda;
 }
 
+.fa {
+    border: 1px solid #cecece;
+    padding: 8px;
+    margin: 0, auto;
+}
+
 .piece::before {
     position: absolute;
     font-size: 5vw;
