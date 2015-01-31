@@ -95,12 +95,14 @@ var board = {};
         'eight': '<span class="piece white rook"></span>'
     };
 
-function move(board, fromX, fromY, toX, toY){
-  board.c.three = board.a.one;
-  board.a.one = '';
-}
-
 print(board);
+
+function move(board){
+    board.c.three = board.a.one;
+    board.a.one = '';
+    print(board);
+}
+    console.log(move());
 
     document.write('<div class="button-group">');
     document.write('<i class="fa fa-angle-double-left fa-lg"></i>');
