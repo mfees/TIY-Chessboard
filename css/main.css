@@ -109,33 +109,23 @@ td {
 }
 
 tr {
-    background-color: #555;
+    background-color: #4d4d4d;
 }
 
 tbody :nth-child(even) td:nth-child(even), 
 tbody :nth-child(odd) td:nth-child(odd) {
-background-color: #999;
+background-color: #8cdcda;
 }
 
-
-td:before {
-    font-size: 9vw;
-}
-
-.button {
-    font-family: sans-serif;
-}
-
-/*td:hover::before {
-    background-color: lightgreen;
-    
-}*/
-
-.piece {
+.piece::before {
     position: absolute;
     font-size: 5vw;
     margin-left: 25%;
     margin-top: 10%;
+}
+
+.piece:hover {
+    color: #f16a70;
 }
 
 .black {
