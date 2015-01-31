@@ -80,14 +80,14 @@ var board = {};
         'eight': ''
     };
     board.g = {
-        'one': '&#9823;',
-        'two': '&#9823;',
-        'three': '&#9823;',
-        'four': '&#9823;',
-        'five': '&#9823;',
-        'six': '&#9823;',
-        'seven': '&#9823;',
-        'eight': '&#9823;'
+        'one': '<span class="piece white pawn"></span>',
+        'two': '<span class="piece white pawn"></span>',
+        'three': '<span class="piece white pawn"></span>',
+        'four': '<span class="piece white pawn"></span>',
+        'five': '<span class="piece white pawn"></span>',
+        'six': '<span class="piece white pawn"></span>',
+        'seven': '<span class="piece white pawn"></span>',
+        'eight': '<span class="piece white pawn"></span>'
     };
     board.h = {
         'one': '<span class="">&#9820;</span>',
