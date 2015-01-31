@@ -96,15 +96,17 @@ var board = {};
         'eight': '<span class="piece white rook"></span>'
     };
 
-//board.c.three = board.a.one;
-//board.a.one = '';
+board.c.three = board.a.one;
+board.a.one = '';
 
 print(board);
 
-document.write('<i class="fa fa-angle-double-left fa-lg"></i>');
-document.write('<i class="fa fa-angle-left fa-lg"></i>');
-document.write('<i class="fa fa-angle-right fa-lg"></i>');
-document.write('<i class="fa fa-angle-double-right fa-lg"></i>');
+    document.write('<div class="button-group">');
+    document.write('<i class="fa fa-angle-double-left fa-lg"></i>');
+    document.write('<i class="fa fa-angle-left fa-lg"></i>');
+    document.write('<i class="fa fa-angle-right fa-lg"></i>');
+    document.write('<i class="fa fa-angle-double-right fa-lg"></i>');
+    document.write('</div>');
 
 //var board = [
 //    ['R', 'N', 'B', 'Q', 'K', 'B', 'N', 'R'],

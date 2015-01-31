@@ -117,9 +117,14 @@ tbody :nth-child(odd) td:nth-child(odd) {
 background-color: #8cdcda;
 }
 
+.button-group {
+    text-align: center;
+    padding: 2em 0;
+}
+
 .fa {
     border: 1px solid #cecece;
-    padding: 8px;
+    padding: .5%;
     margin: 0, auto;
 }
 
