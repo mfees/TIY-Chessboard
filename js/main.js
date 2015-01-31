@@ -1,7 +1,3 @@
-//var assert = require('assert');
-//var _ = require('lodash');
-
-
 function print(board){
     document.write('<table>');
     
