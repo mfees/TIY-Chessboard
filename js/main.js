@@ -98,8 +98,9 @@ var board = {};
 print(board);
 
 function move(board){
-    board.c.three = board.a.one;
-    board.a.one = '';
+    document.write 
+    /*board.c.three = board.a.one;
+    board.a.one = '';*/
     print(board);
 }
     console.log(move());
