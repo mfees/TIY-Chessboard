@@ -177,6 +177,13 @@ function fastForward(){
     var mContent = document.getElementById('g8').innerHTML;
         document.getElementById('g8').innerHTML = "";
         document.getElementById('f8').innerHTML = mContent;
+    var lContent = document.getElementById('b7').innerHTML;
+        document.getElementById('b7').innerHTML = "";
+        document.getElementById('c7').innerHTML = lContent;
+    var lContent = document.getElementById('h2').innerHTML;
+        document.getElementById('h2').innerHTML = "";
+        document.getElementById('f4').innerHTML = lContent;
+    
 }
 
 function rewind(){
@@ -186,6 +193,13 @@ function rewind(){
     var mContent = document.getElementById('f8').innerHTML;
         document.getElementById('f8').innerHTML = "";
         document.getElementById('g8').innerHTML = mContent;
+    var lContent = document.getElementById('c7').innerHTML;
+        document.getElementById('c7').innerHTML = "";
+        document.getElementById('b7').innerHTML = lContent;
+        whatMoveAreWeOn--;
+    var lContent = document.getElementById('f4').innerHTML;
+        document.getElementById('f4').innerHTML = "";
+        document.getElementById('h2').innerHTML = lContent;
 }
  
 
