@@ -171,35 +171,45 @@ function movePieceBack(){
 
  
 function fastForward(){
-    var lContent = document.getElementById('a1').innerHTML;
-        document.getElementById('a1').innerHTML = "";
-        document.getElementById('c4').innerHTML = lContent;
+    if (whatMoveAreWeOn == 4) {
+        
+    } else {
+    whatMoveAreWeOn = 4;
+    var lContent = document.getElementById('a2').innerHTML;
+        document.getElementById('a2').innerHTML = "";
+        document.getElementById('c3').innerHTML = lContent;
     var mContent = document.getElementById('g8').innerHTML;
         document.getElementById('g8').innerHTML = "";
         document.getElementById('f8').innerHTML = mContent;
-    var lContent = document.getElementById('b7').innerHTML;
+    var nContent = document.getElementById('b7').innerHTML;
         document.getElementById('b7').innerHTML = "";
-        document.getElementById('c7').innerHTML = lContent;
-    var lContent = document.getElementById('h2').innerHTML;
+        document.getElementById('c7').innerHTML = nContent;
+    var oContent = document.getElementById('h2').innerHTML;
         document.getElementById('h2').innerHTML = "";
-        document.getElementById('f4').innerHTML = lContent;
+        document.getElementById('f4').innerHTML = oContent;
+    }
     
 }
 
 function rewind(){
-     var lContent = document.getElementById('c4').innerHTML;
-        document.getElementById('c4').innerHTML = "";
-        document.getElementById('a1').innerHTML = lContent;
+    
+    if(whatMoveAreWeOn == 0){
+        
+    } else { 
+     whatMoveAreWeOn = 0;
+     var lContent = document.getElementById('c3').innerHTML;
+        document.getElementById('c3').innerHTML = "";
+        document.getElementById('a2').innerHTML = lContent;
     var mContent = document.getElementById('f8').innerHTML;
         document.getElementById('f8').innerHTML = "";
         document.getElementById('g8').innerHTML = mContent;
-    var lContent = document.getElementById('c7').innerHTML;
+    var nContent = document.getElementById('c7').innerHTML;
         document.getElementById('c7').innerHTML = "";
-        document.getElementById('b7').innerHTML = lContent;
-        whatMoveAreWeOn--;
-    var lContent = document.getElementById('f4').innerHTML;
+        document.getElementById('b7').innerHTML = nContent;
+    var oContent = document.getElementById('f4').innerHTML;
         document.getElementById('f4').innerHTML = "";
-        document.getElementById('h2').innerHTML = lContent;
+        document.getElementById('h2').innerHTML = oContent;
+    }
 }
  
 
