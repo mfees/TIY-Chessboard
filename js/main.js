@@ -118,14 +118,24 @@ var whatMoveAreWeOn = 0;
 function movePiece(){
     
     if (whatMoveAreWeOn == 0){
-        var lContent = document.getElementById('a1').innerHTML;
-        document.getElementById('a1').innerHTML = "";
-        document.getElementById('c4').innerHTML = lContent;
+        var lContent = document.getElementById('a2').innerHTML;
+        document.getElementById('a2').innerHTML = "";
+        document.getElementById('c3').innerHTML = lContent;
         whatMoveAreWeOn++;
     }else if(whatMoveAreWeOn == 1){
         var lContent = document.getElementById('g8').innerHTML;
         document.getElementById('g8').innerHTML = "";
         document.getElementById('f8').innerHTML = lContent;
+        whatMoveAreWeOn++;
+    }else if(whatMoveAreWeOn == 2){
+        var lContent = document.getElementById('b7').innerHTML;
+        document.getElementById('b7').innerHTML = "";
+        document.getElementById('c7').innerHTML = lContent;
+        whatMoveAreWeOn++;
+    }else if(whatMoveAreWeOn == 3){
+        var lContent = document.getElementById('h2').innerHTML;
+        document.getElementById('h2').innerHTML = "";
+        document.getElementById('f4').innerHTML = lContent;
         whatMoveAreWeOn++;
     }
 }
@@ -136,14 +146,25 @@ function movePieceBack(){
     if (whatMoveAreWeOn == 0){
         //do nothing
     }else if (whatMoveAreWeOn == 1){
-        var lContent = document.getElementById('c4').innerHTML;
-        document.getElementById('c4').innerHTML = "";
-        document.getElementById('a1').innerHTML = lContent;
+        var lContent = document.getElementById('c3').innerHTML;
+        document.getElementById('c3').innerHTML = "";
+        document.getElementById('a2').innerHTML = lContent;
         whatMoveAreWeOn--;
     }else if(whatMoveAreWeOn == 2){
         var lContent = document.getElementById('f8').innerHTML;
         document.getElementById('f8').innerHTML = "";
         document.getElementById('g8').innerHTML = lContent;
+        whatMoveAreWeOn--;
+    }else if(whatMoveAreWeOn == 3){
+        var lContent = document.getElementById('c7').innerHTML;
+        document.getElementById('c7').innerHTML = "";
+        document.getElementById('b7').innerHTML = lContent;
+        whatMoveAreWeOn--;
+    }
+    else if(whatMoveAreWeOn == 4){
+        var lContent = document.getElementById('f4').innerHTML;
+        document.getElementById('f4').innerHTML = "";
+        document.getElementById('h2').innerHTML = lContent;
         whatMoveAreWeOn--;
     }
 }
