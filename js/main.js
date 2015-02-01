@@ -113,20 +113,65 @@ var board = {};
 print(board);
 
    
-
+var whatMoveAreWeOn = 0;
 
 function movePiece(){
     
-    var lContent = document.getElementById('a1').innerHTML;
-    document.getElementById('a1').innerHTML = "";
-    document.getElementById('c4').innerHTML = lContent;
+    if (whatMoveAreWeOn == 0){
+        var lContent = document.getElementById('a1').innerHTML;
+        document.getElementById('a1').innerHTML = "";
+        document.getElementById('c4').innerHTML = lContent;
+        whatMoveAreWeOn++;
+    }else if(whatMoveAreWeOn == 1){
+        var lContent = document.getElementById('g8').innerHTML;
+        document.getElementById('g8').innerHTML = "";
+        document.getElementById('f8').innerHTML = lContent;
+        whatMoveAreWeOn++;
+    }
+}
+
+function movePieceBack(){
     
+    
+    if (whatMoveAreWeOn == 0){
+        //do nothing
+    }else if (whatMoveAreWeOn == 1){
+        var lContent = document.getElementById('c4').innerHTML;
+        document.getElementById('c4').innerHTML = "";
+        document.getElementById('a1').innerHTML = lContent;
+        whatMoveAreWeOn--;
+    }else if(whatMoveAreWeOn == 2){
+        var lContent = document.getElementById('f8').innerHTML;
+        document.getElementById('f8').innerHTML = "";
+        document.getElementById('g8').innerHTML = lContent;
+        whatMoveAreWeOn--;
+    }
+}
+
+ 
+function fastForward(){
+    var lContent = document.getElementById('a1').innerHTML;
+        document.getElementById('a1').innerHTML = "";
+        document.getElementById('c4').innerHTML = lContent;
+    var mContent = document.getElementById('g8').innerHTML;
+        document.getElementById('g8').innerHTML = "";
+        document.getElementById('f8').innerHTML = mContent;
+}
+
+function rewind(){
+     var lContent = document.getElementById('c4').innerHTML;
+        document.getElementById('c4').innerHTML = "";
+        document.getElementById('a1').innerHTML = lContent;
+    var mContent = document.getElementById('f8').innerHTML;
+        document.getElementById('f8').innerHTML = "";
+        document.getElementById('g8').innerHTML = mContent;
 }
  
 
+
     document.write('<div class="button-group">');
-    document.write('<i class="fa fa-angle-double-left fa-lg"></i>');
-    document.write('<i class="fa fa-angle-left fa-lg"></i>');
+    document.write('<i class="fa fa-angle-double-left fa-lg" onClick="rewind()"></i>');
+    document.write('<i class="fa fa-angle-left fa-lg" onClick="movePieceBack()"></i>');
     document.write('<i class="fa fa-angle-right fa-lg" onClick="movePiece()"></i>');
-    document.write('<i class="fa fa-angle-double-right fa-lg"></i>');
+    document.write('<i class="fa fa-angle-double-right fa-lg" onclick="fastForward()"></i>');
     document.write('</div>');
