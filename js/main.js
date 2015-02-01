@@ -174,19 +174,27 @@ function fastForward(){
     if (whatMoveAreWeOn == 4) {
         
     } else {
-    whatMoveAreWeOn = 4;
-    var lContent = document.getElementById('a2').innerHTML;
-        document.getElementById('a2').innerHTML = "";
-        document.getElementById('c3').innerHTML = lContent;
-    var mContent = document.getElementById('g8').innerHTML;
-        document.getElementById('g8').innerHTML = "";
-        document.getElementById('f8').innerHTML = mContent;
-    var nContent = document.getElementById('b7').innerHTML;
-        document.getElementById('b7').innerHTML = "";
-        document.getElementById('c7').innerHTML = nContent;
-    var oContent = document.getElementById('h2').innerHTML;
-        document.getElementById('h2').innerHTML = "";
-        document.getElementById('f4').innerHTML = oContent;
+        whatMoveAreWeOn = 4;
+        var lContent = document.getElementById('a2').innerHTML;
+        if(lContent != ""){
+            document.getElementById('a2').innerHTML = "";
+            document.getElementById('c3').innerHTML = lContent;
+        }
+        var mContent = document.getElementById('g8').innerHTML;
+        if(mContent != ""){
+            document.getElementById('g8').innerHTML = "";
+            document.getElementById('f8').innerHTML = mContent;
+        }
+        var nContent = document.getElementById('b7').innerHTML;
+        if(nContent != ""){
+            document.getElementById('b7').innerHTML = "";
+            document.getElementById('c7').innerHTML = nContent;
+        }
+        var oContent = document.getElementById('h2').innerHTML;
+        if(oContent != ""){
+            document.getElementById('h2').innerHTML = "";
+            document.getElementById('f4').innerHTML = oContent;
+        }
     }
     
 }
@@ -196,19 +204,27 @@ function rewind(){
     if(whatMoveAreWeOn == 0){
         
     } else { 
-     whatMoveAreWeOn = 0;
-     var lContent = document.getElementById('c3').innerHTML;
-        document.getElementById('c3').innerHTML = "";
-        document.getElementById('a2').innerHTML = lContent;
-    var mContent = document.getElementById('f8').innerHTML;
-        document.getElementById('f8').innerHTML = "";
-        document.getElementById('g8').innerHTML = mContent;
-    var nContent = document.getElementById('c7').innerHTML;
-        document.getElementById('c7').innerHTML = "";
-        document.getElementById('b7').innerHTML = nContent;
-    var oContent = document.getElementById('f4').innerHTML;
-        document.getElementById('f4').innerHTML = "";
-        document.getElementById('h2').innerHTML = oContent;
+         whatMoveAreWeOn = 0;
+         var lContent = document.getElementById('c3').innerHTML;
+        if(lContent != ""){
+            document.getElementById('c3').innerHTML = "";
+            document.getElementById('a2').innerHTML = lContent;
+        }
+        var mContent = document.getElementById('f8').innerHTML;
+        if(mContent != ""){
+            document.getElementById('f8').innerHTML = "";
+            document.getElementById('g8').innerHTML = mContent;
+        }
+        var nContent = document.getElementById('c7').innerHTML;
+        if(nContent != ""){
+            document.getElementById('c7').innerHTML = "";
+            document.getElementById('b7').innerHTML = nContent;
+        }
+        var oContent = document.getElementById('f4').innerHTML;
+        if(oContent != ""){
+            document.getElementById('f4').innerHTML = "";
+            document.getElementById('h2').innerHTML = oContent;
+        }
     }
 }
  
