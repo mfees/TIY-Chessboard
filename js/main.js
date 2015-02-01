@@ -1,12 +1,26 @@
-function print(board){
+function print(){
+    
+    var rowIdentifier = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'];
+    
     document.write('<table>');
     
+    var index = 0;
+    
     _.forEach(board, function(row, key){
+    
         document.write("<tr>");
+        var idNumber = 1;
+        
         _.forEach(row, function(square, k){
-            document.write("<td>" + square + "</td>")
-   
+        
+            var squareId = rowIdentifier[index] + idNumber;
+            
+            document.write("<td id=" + squareId + ">" + square + "</td>")
+            idNumber++;
+        
         });
+        
+        index++;
         document.write("</tr>");
     });
     
@@ -95,19 +109,30 @@ var board = {};
         'eight': '<span class="piece white rook"></span>'
     };
 
+
 print(board);
 
-function move(board){
-    document.write 
-    /*board.c.three = board.a.one;
-    board.a.one = '';*/
-    print(board);
+   
+
+
+function movePiece(){
+    
+    var lContent = document.getElementById('a1').innerHTML;
+    document.getElementById('a1').innerHTML = "";
+    document.getElementById('c4').innerHTML = lContent;
+    
 }
-    console.log(move());
+ 
+
+function removePriorTable(){
+    var tables= document.getElementsByTagName('table');
+    for (var i= tables.length; i-->0;)
+    tables[i].parentNode.removeChild(tables[i]);
+}
 
     document.write('<div class="button-group">');
     document.write('<i class="fa fa-angle-double-left fa-lg"></i>');
     document.write('<i class="fa fa-angle-left fa-lg"></i>');
-    document.write('<i class="fa fa-angle-right fa-lg"></i>');
+    document.write('<i class="fa fa-angle-right fa-lg" onClick="movePiece()"></i>');
     document.write('<i class="fa fa-angle-double-right fa-lg"></i>');
     document.write('</div>');
