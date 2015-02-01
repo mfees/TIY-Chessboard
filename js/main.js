@@ -124,12 +124,6 @@ function movePiece(){
 }
  
 
-function removePriorTable(){
-    var tables= document.getElementsByTagName('table');
-    for (var i= tables.length; i-->0;)
-    tables[i].parentNode.removeChild(tables[i]);
-}
-
     document.write('<div class="button-group">');
     document.write('<i class="fa fa-angle-double-left fa-lg"></i>');
     document.write('<i class="fa fa-angle-left fa-lg"></i>');
